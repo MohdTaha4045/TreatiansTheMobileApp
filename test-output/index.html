@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,8 +39,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,37 +50,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Fleek\AppData\Local\Temp\testng-eclipse-355800987\testng-customsuite.xml</span>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\Users\Fleek\eclipse-workspace\Testing.Treatians\TestNG.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -93,46 +93,70 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods,   6 passed</span>
+                    <span class="method-stats">9 methods, 3 failed,   6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.testTreatians" class="method navigator-link" hash-for-method="BookAppointment">BookAppointment</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.testTreatians" class="method navigator-link" hash-for-method="creatingNewUser">creatingNewUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.testTreatians" class="method navigator-link" hash-for-method="verifyAppointment">verifyAppointment</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="test.testTreatians" class="method navigator-link" hash-for-method="loginTest1(Gayaas@gmail.com, 12345678, valid)">loginTest1(Gayaas@gmail.com, 12345678, valid)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="test.testTreatians" class="method navigator-link" hash-for-method="loginTest1(gayaas@, 12345678, invalid)">loginTest1(gayaas@, 12345678, invalid)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="test.testTreatians" class="method navigator-link" hash-for-method="loginTest1(gayaas@gmail.com, 87654321, invalid)">loginTest1(gayaas@gmail.com, 87654321, invalid)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="test.testTreatians" class="method navigator-link" hash-for-method="loginTest1(gayaas@gmail.com, 12345678, valid)">loginTest1(gayaas@gmail.com, 12345678, valid)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="test.testTreatians" class="method navigator-link" hash-for-method="loginTest1(GAYAAS@gmail.com, 12345678, valid)">loginTest1(GAYAAS@gmail.com, 12345678, valid)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="test.testTreatians" class="method navigator-link" hash-for-method="loginTest1(gayaas@gmail.com, 87654321, invalid)">loginTest1(gayaas@gmail.com, 87654321, invalid)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="test.testTreatians" class="method navigator-link" hash-for-method="loginTest1(gayaas@, 12345678, invalid)">loginTest1(gayaas@, 12345678, invalid)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="test.testTreatians" class="method navigator-link" hash-for-method="loginTest1(Gayaas@gmail.com, 12345678, valid)">loginTest1(Gayaas@gmail.com, 12345678, valid)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="test.testTreatians" class="method navigator-link" hash-for-method="loginTest1(gayaas@gmail.com, 12345678, valid)">loginTest1(gayaas@gmail.com, 12345678, valid)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="test.testTreatians" class="method navigator-link" hash-for-method="loginTest1(GAYAAS@gmail.com, 12345678, valid)">loginTest1(GAYAAS@gmail.com, 12345678, valid)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="test.testTreatians" class="method navigator-link" hash-for-method="loginTest1(12345678, gayaas@gmail.com, invalid)">loginTest1(12345678, gayaas@gmail.com, invalid)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="test.testTreatians" class="method navigator-link" hash-for-method="loginTest1(12345678, gayaas@gmail.com, invalid)">loginTest1(12345678, gayaas@gmail.com, invalid)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -143,37 +167,133 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">test.testTreatians</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="loginTest1(Gayaas@gmail.com, 12345678, valid)">
-                  </a> <!-- loginTest1(Gayaas@gmail.com, 12345678, valid) -->
-                  <span class="method-name">loginTest1</span>
-                  <span class="parameters">(Gayaas@gmail.com, 12345678, valid)</span>
+                  <a name="BookAppointment">
+                  </a> <!-- BookAppointment -->
+                  <span class="method-name">BookAppointment</span>
+                  <div class="stack-trace">org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [5fe5c94f-099d-4495-905d-1111a99dc8ea, screenshot {}]
+Capabilities {appium:appActivity: com.treatians.MainActivity, appium:appPackage: com.treatians, appium:databaseEnabled: false, appium:desired: {appActivity: com.treatians.MainActivity, appPackage: com.treatians, deviceName: Pixel 4XL API 30, platformName: android, uuid: emulator-5554}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x3040, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3.5, appium:platformVersion: 13, appium:statBarHeight: 98, appium:takesScreenshot: true, appium:uuid: emulator-5554, appium:viewportRect: {height: 2858, left: 0, top: 98, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 5fe5c94f-099d-4495-905d-1111a99dc8ea
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:272)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:318)
+	at io.appium.java_client.AppiumDriver.getScreenshotAs(AppiumDriver.java:281)
+	at baseClass.TreatiansBaseClass.failedTest(TreatiansBaseClass.java:47)
+	at generalUtility.CustomListener.onTestFailure(CustomListener.java:17)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.lang.RuntimeException: NettyHttpHandler request execution error
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:76)
+	at io.appium.java_client.AppiumUserAgentFilter.lambda$apply$0(AppiumUserAgentFilter.java:88)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:49)
+	at io.appium.java_client.AppiumUserAgentFilter.lambda$apply$0(AppiumUserAgentFilter.java:88)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:99)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	... 31 more
+Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: Request timeout to 127.0.0.1/127.0.0.1:4723 after 600000 ms
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:59)
+	... 40 more
+Caused by: java.util.concurrent.TimeoutException: Request timeout to 127.0.0.1/127.0.0.1:4723 after 600000 ms
+	at org.asynchttpclient.netty.timeout.TimeoutTimerTask.expire(TimeoutTimerTask.java:43)
+	at org.asynchttpclient.netty.timeout.RequestTimeoutTimerTask.run(RequestTimeoutTimerTask.java:50)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:703)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:790)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="loginTest1(gayaas@gmail.com, 87654321, invalid)">
-                  </a> <!-- loginTest1(gayaas@gmail.com, 87654321, invalid) -->
-                  <span class="method-name">loginTest1</span>
-                  <span class="parameters">(gayaas@gmail.com, 87654321, invalid)</span>
+                  <a name="creatingNewUser">
+                  </a> <!-- creatingNewUser -->
+                  <span class="method-name">creatingNewUser</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [5fe5c94f-099d-4495-905d-1111a99dc8ea, findElement {using=xpath, value=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.view.View[1]/android.view.View/android.view.View[2]/android.widget.TextView}]
+Capabilities {appium:appActivity: com.treatians.MainActivity, appium:appPackage: com.treatians, appium:databaseEnabled: false, appium:desired: {appActivity: com.treatians.MainActivity, appPackage: com.treatians, deviceName: Pixel 4XL API 30, platformName: android, uuid: emulator-5554}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x3040, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3.5, appium:platformVersion: 13, appium:statBarHeight: 98, appium:takesScreenshot: true, appium:uuid: emulator-5554, appium:viewportRect: {height: 2858, left: 0, top: 98, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 5fe5c94f-099d-4495-905d-1111a99dc8ea
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pageObjectModel.TreatiansPOM.&lt;init&gt;(TreatiansPOM.java:110)
+	at test.testTreatians.creatingNewUser(testTreatians.java:31)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="loginTest1(GAYAAS@gmail.com, 12345678, valid)">
-                  </a> <!-- loginTest1(GAYAAS@gmail.com, 12345678, valid) -->
-                  <span class="method-name">loginTest1</span>
-                  <span class="parameters">(GAYAAS@gmail.com, 12345678, valid)</span>
+                  <a name="verifyAppointment">
+                  </a> <!-- verifyAppointment -->
+                  <span class="method-name">verifyAppointment</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [5fe5c94f-099d-4495-905d-1111a99dc8ea, findElement {using=xpath, value=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.view.View[1]/android.view.View/android.view.View[2]/android.widget.TextView}]
+Capabilities {appium:appActivity: com.treatians.MainActivity, appium:appPackage: com.treatians, appium:databaseEnabled: false, appium:desired: {appActivity: com.treatians.MainActivity, appPackage: com.treatians, deviceName: Pixel 4XL API 30, platformName: android, uuid: emulator-5554}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x3040, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3.5, appium:platformVersion: 13, appium:statBarHeight: 98, appium:takesScreenshot: true, appium:uuid: emulator-5554, appium:viewportRect: {height: 2858, left: 0, top: 98, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 5fe5c94f-099d-4495-905d-1111a99dc8ea
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pageObjectModel.TreatiansPOM.&lt;init&gt;(TreatiansPOM.java:110)
+	at test.testTreatians.verifyAppointment(testTreatians.java:198)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.testTreatians</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="loginTest1(gayaas@, 12345678, invalid)">
@@ -192,6 +312,30 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="loginTest1(gayaas@gmail.com, 87654321, invalid)">
+                  </a> <!-- loginTest1(gayaas@gmail.com, 87654321, invalid) -->
+                  <span class="method-name">loginTest1</span>
+                  <span class="parameters">(gayaas@gmail.com, 87654321, invalid)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest1(Gayaas@gmail.com, 12345678, valid)">
+                  </a> <!-- loginTest1(Gayaas@gmail.com, 12345678, valid) -->
+                  <span class="method-name">loginTest1</span>
+                  <span class="parameters">(Gayaas@gmail.com, 12345678, valid)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest1(GAYAAS@gmail.com, 12345678, valid)">
+                  </a> <!-- loginTest1(GAYAAS@gmail.com, 12345678, valid) -->
+                  <span class="method-name">loginTest1</span>
+                  <span class="parameters">(GAYAAS@gmail.com, 12345678, valid)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="loginTest1(12345678, gayaas@gmail.com, invalid)">
                   </a> <!-- loginTest1(12345678, gayaas@gmail.com, invalid) -->
                   <span class="method-name">loginTest1</span>
@@ -199,124 +343,121 @@
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Fleek\AppData\Local\Temp\testng-eclipse-355800987\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Fleek\eclipse-workspace\Testing.Treatians\TestNG.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;test.testTreatians&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;loginTest1&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- test.testTreatians --&gt;
+      &lt;class name=&quot;test.testTreatians&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="testlist-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">Tests for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="group-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="times-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Times for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(9);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginTest1')
+data.setCell(0, 1, 'BookAppointment')
 data.setCell(0, 2, 'test.testTreatians')
-data.setCell(0, 3, 28155);
+data.setCell(0, 3, 2175199);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'loginTest1')
 data.setCell(1, 2, 'test.testTreatians')
-data.setCell(1, 3, 15658);
+data.setCell(1, 3, 28600);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'loginTest1')
 data.setCell(2, 2, 'test.testTreatians')
-data.setCell(2, 3, 14613);
+data.setCell(2, 3, 14752);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'loginTest1')
 data.setCell(3, 2, 'test.testTreatians')
-data.setCell(3, 3, 12396);
+data.setCell(3, 3, 13546);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'loginTest1')
 data.setCell(4, 2, 'test.testTreatians')
-data.setCell(4, 3, 12047);
+data.setCell(4, 3, 11826);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'loginTest1')
+data.setCell(5, 1, 'creatingNewUser')
 data.setCell(5, 2, 'test.testTreatians')
-data.setCell(5, 3, 11958);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+data.setCell(5, 3, 11652);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'loginTest1')
+data.setCell(6, 2, 'test.testTreatians')
+data.setCell(6, 3, 11294);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'loginTest1')
+data.setCell(7, 2, 'test.testTreatians')
+data.setCell(7, 3, 10910);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifyAppointment')
+data.setCell(8, 2, 'test.testTreatians')
+data.setCell(8, 3, 10426);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <span class="suite-total-time">Total running time: 38 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="reporter-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Reporter output for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">3 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">test.testTreatians</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">verifyAppointment</span>
-                <br/>
-                <span class="ignored-method-name">creatingNewUser</span>
-                <br/>
-                <span class="ignored-method-name">BookAppointment</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="chronological-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
@@ -328,32 +469,50 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">creatingNewUser</span>
+                <span class="method-start">40427 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
                 <span class="method-name">loginTest1(gayaas@gmail.com, 12345678, valid)</span>
-                <span class="method-start">20401 ms</span>
+                <span class="method-start">60854 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">loginTest1(Gayaas@gmail.com, 12345678, valid)</span>
-                <span class="method-start">48729 ms</span>
+                <span class="method-start">89505 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">loginTest1(GAYAAS@gmail.com, 12345678, valid)</span>
-                <span class="method-start">64393 ms</span>
+                <span class="method-start">103063 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">loginTest1(gayaas@gmail.com, 87654321, invalid)</span>
-                <span class="method-start">79012 ms</span>
+                <span class="method-start">117822 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">loginTest1(12345678, gayaas@gmail.com, invalid)</span>
-                <span class="method-start">91063 ms</span>
+                <span class="method-start">129655 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">loginTest1(gayaas@, 12345678, invalid)</span>
-                <span class="method-start">103025 ms</span>
+                <span class="method-start">140571 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">BookAppointment</span>
+                <span class="method-start">151881 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyAppointment</span>
+                <span class="method-start">2337583 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">115429 ms</span>
+                <span class="method-start">2351214 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
